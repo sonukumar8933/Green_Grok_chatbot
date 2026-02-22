@@ -12,8 +12,8 @@ const analysisResult = document.getElementById('analysis-result');
 
 // API Configuration - Add your keys here
 const API_CONFIG = {
-    WEATHER_API_KEY: '3ff2442bed5b632cb1c3e06c66c95053', // Get from https://openweathermap.org/api
-    GEMINI_API_KEY: 'AIzaSyDuf_-H9p7hd_Zk1mq5dj9Aql79o5bMp1M', // Get from Google AI Studio
+    WEATHER_API_KEY: 'bd5e378503939ddaee76f12ad7a97608', // Get from https://openweathermap.org/api
+    GEMINI_API_KEY: 'AIzaSyDUaPxRfTNnlgETLkmPjk-Cn-ejma4TJ8', // Get from Google AI Studio
 };
 
 // Local AI responses for testing
