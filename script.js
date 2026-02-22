@@ -17,7 +17,7 @@ const API_CONFIG = {
   GEMINI_API_KEY: 'AIzaSyDUaPxRfTNnlgETLkmPjk-Cn-ejma4TJ8M'
 };
 
-const GEMINI_MODEL = 'Gemini 3.1 Pro';
+const GEMINI_MODEL = 'gemini-1.5-pro';
 const GEMINI_ENDPOINT =
   `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
