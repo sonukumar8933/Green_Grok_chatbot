@@ -13,11 +13,11 @@ const imageUpload = document.getElementById('image-upload');
  * API CONFIGURATION
  ***********************/
 const API_CONFIG = {
-  WEATHER_API_KEY: '1ced7e468d71ed0e1b1975c927cd6174',
+  WEATHER_API_KEY: 'b8445be7ec4cade10f1134d880b84f58',
   GEMINI_API_KEY: 'AIzaSyDUaPxRfTNnlgETLkmPjk-Cn-ejma4TJ8M'
 };
 
-const GEMINI_MODEL = 'gemini-1.5-flash';
+const GEMINI_MODEL = 'Gemini 3.1 Pro';
 const GEMINI_ENDPOINT =
   `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
