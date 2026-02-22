@@ -23,6 +23,23 @@ const GEMINI_ENDPOINT =
 
 
 fetch(
+  'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAhfwxJb12g8ZXc1zU-jmJuBV-Bl90WX2w',
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [
+        { role: 'user', parts: [{ text: 'Hello Gemini' }] }
+      ]
+    })
+  }
+)
+.then(r => r.json())
+.then(console.log)
+.catch(console.error);
+
+
+fetch(
   'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=YOUR_NEW_KEY',
   {
     method: 'POST',
