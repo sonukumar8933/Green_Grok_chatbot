@@ -14,7 +14,7 @@ const imageUpload = document.getElementById('image-upload');
  ***********************/
 const API_CONFIG = {
   WEATHER_API_KEY: 'b8445be7ec4cade10f1134d880b84f58',
-  GEMINI_API_KEY: 'AIzaSyDUaPxRfTNnlgETLkmPjk-Cn-ejma4TJ8M'
+  GEMINI_API_KEY: 'AIzaSyAhfwxJb12g8ZXc1zU-jmJuBV-Bl90WX2w'
 };
 
 const GEMINI_MODEL = 'gemini-1.5-flash';
