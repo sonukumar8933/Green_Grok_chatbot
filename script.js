@@ -17,10 +17,23 @@ const API_CONFIG = {
   GEMINI_API_KEY: 'AIzaSyDUaPxRfTNnlgETLkmPjk-Cn-ejma4TJ8M'
 };
 
-const GEMINI_MODEL = 'gemini-1.5-pro';
+const GEMINI_MODEL = 'gemini-1.5-flash';
 const GEMINI_ENDPOINT =
-  `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
+  `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`
 
+
+fetch(
+  'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=YOUR_NEW_KEY',
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [
+        { role: 'user', parts: [{ text: 'Hello Gemini' }] }
+      ]
+    })
+  }
+).then(r => r.json()).then(console.log);
 /***********************
  * STATE VARIABLES
  ***********************/
